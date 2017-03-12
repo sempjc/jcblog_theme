@@ -1,22 +1,54 @@
+// TABLE OF CONTENT
+//
+// Font Face................ The font face of the theme
+// Font Sizes............... The standard font sizes class
+// Font Color............... The main color theme for text
+//
+
+
+
+
+
 // #Font Face
 //
-// The fonts selected for the design are the following:
+// This theme use tree font types to denote different Content.
+// The choosen fonts are open source and are available at
+// [Google Font](https://fonts.google.com/):
+// * [Alfa Slab One](https://fonts.google.com/specimen/Galada)
+// * [Galada](https://fonts.google.com/specimen/Alfa+Slab+One)
+// * [Open Sans](https://fonts.google.com/specimen/Open+Sans)
 //
+// #### Alfa Slab One
 //
-// ### Alfa Slab One
-// This font face is used for the Blog Titles.
+// This font face is used for the Blog Title.
 //
-// ### Galada
+// <p style='font-family: alfa-slab-one;'>
+// Lorem ipsum dolor sit amet, mollis wisi non. Venenatis sapien sed, suscipit
+// turpis nibh, velit sodales amet. Cras eros, tincidunt pellentesque, non
+// lectus. Cras nam, vestibulum imperdiet suspendisse.</p>
+//
+// #### Galada
+//
 // This font face is used on the Site Name
 //
-// ### Open Sans
+// <p style='font-family: galada;'>
+// Lorem ipsum dolor sit amet, mollis wisi non. Venenatis sapien sed, suscipit
+// turpis nibh, velit sodales amet. Cras eros, tincidunt pellentesque, non
+// lectus. Cras nam, vestibulum imperdiet suspendisse.</p>
+//
+// #### Open Sans
+//
 // This font face is used as a default text for everything
 //
-// markup:
-// <p style='font-family: alfa-slab-one;'>Alfa Slab One </p>
-// <p style='font-family: galada;'>Galada</p>
-// <p style='font-family: open-sans;'>Open Sans</p>
-// <p style='font-family: open-sans; font-weight: bold;'>Open Sans</p>
+// <p style='font-family: open-sans;'>
+// Lorem ipsum dolor sit amet, mollis wisi non. Venenatis sapien sed, suscipit
+// turpis nibh, velit sodales amet. Cras eros, tincidunt pellentesque, non
+// lectus. Cras nam, vestibulum imperdiet suspendisse.</p>
+// <p style='font-family: open-sans; font-weight: bold;'>
+// Lorem ipsum dolor sit amet, mollis wisi non. Venenatis sapien sed, suscipit
+// turpis nibh, velit sodales amet. Cras eros, tincidunt pellentesque, non
+// lectus. Cras nam, vestibulum imperdiet suspendisse.</p>
+//
 //
 // Styleguide 1.2
 
@@ -26,11 +58,13 @@
 
 }
 
+
 @font-face {
   font-family: 'galada';
   src: url('./vendor/fonts/Galada-Regular.ttf') format('truetype');
 
 }
+
 
 @font-face {
   font-family: 'open-sans';
@@ -39,12 +73,27 @@
 }
 
 
+html {
+  font-family: 'open-sans';
+}
+
+
+
 
 
 
 // #Font Sizes
 //
+// This are the standar class for the different font size of the design.
 //
+// .txt--xl - Extra large text.
+// .txt--lg - Large text.
+// .txt--md - Medium text.
+// .txt--sm - Small text.
+// .txt--xs - Extra Small text.
+//
+// markup:
+//<p class="{$modifiers}">Lorem ipsum dolor sit amet, mollis wisi non.</div>
 //
 // Styleguide 1.3
 
@@ -56,7 +105,6 @@
 .txt--lg {
   font-size: $fs-lg;
 }
-
 
 .txt--md {
   font-size: $fs-md;
@@ -74,65 +122,37 @@
 
 
 
-//----------------------------------------------------------------------------
+// #Font Color
 //
-//   #Font Colors
+// This are the standar class for the different font size of the design.
 //
-//----------------------------------------------------------------------------
-
-
-// Use in conjuction of $primary-color or any colored background
+// .primary-text-color - Primary text color
+// .txt-primary-color - Text primary color
+// .secondary-text-color - Secondary text color
+// .txt-accent-color - Accent color
+//
+// markup:
+// <style>
+//  p[class='primary-text-color'] { background: $primary-color }
+// </style>
+// <p class="{$modifiers}">{$modifiers}</div>
+//
+// Styleguide 1.4
 
 .primary-text-color {
   color: $primary-color-text;
 }
 
-
-// Use in normal text
 .txt-primary-color {
   color: $primary-text-color;
 }
-
 
 .secondary-text-color {
   color: $primary-color-dark;
 }
 
-
-// Use this on links in paragraph or hovered texts
 .txt-accent-color {
-  color: $accent-color;
+    color: $accent-color;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-html {
-  font-family: 'open-sans';
-}

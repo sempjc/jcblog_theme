@@ -34,20 +34,23 @@
   font-family: 'open-sans';
   src: url("./vendor/fonts/OpenSans-Regular.ttf") format("truetype"), url("./vendor/fonts/OpenSans-Bold.ttf") format("truetype"); }
 
+html {
+  font-family: 'open-sans'; }
+
 .txt--xl {
-  font-size: em(64); }
+  font-size: 4em; }
 
 .txt--lg {
-  font-size: em(36); }
+  font-size: 2.25em; }
 
 .txt--md {
-  font-size: em(24); }
+  font-size: 1.5em; }
 
 .txt--sm {
-  font-size: em(18); }
+  font-size: 1.125em; }
 
 .txt--xs {
-  font-size: em(14); }
+  font-size: 0.875em; }
 
 .primary-text-color {
   color: #fff; }
@@ -60,6 +63,3 @@
 
 .txt-accent-color {
   color: #ffc107; }
-
-html {
-  font-family: 'open-sans'; }
