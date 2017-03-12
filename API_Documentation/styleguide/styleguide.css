@@ -1,0 +1,73 @@
+/*
+ *
+ * Theme Name: JCSR-Blog_theme1
+ * Author: Jean Carlo Semprit Rodriguez
+ * Description: The theme of my blog site.
+ * Version: 0.0.1
+ *
+ */
+.bg-primary-color {
+  background-color: #2196f3; }
+
+.bg-primary-color--dark {
+  background-color: #1976d2; }
+
+.bg-primary-color--light {
+  background-color: #bbdefb; }
+
+.bg-accent-color {
+  background-color: #ffc107; }
+
+.bg-white {
+  background-color: #fff; }
+
+.bg-gray--dark {
+  background-color: #212121; }
+
+.bg-gray--light {
+  background-color: #bdbdbd; }
+
+.bg-gray {
+  background-color: #757575; }
+
+@font-face {
+  font-family: 'alfa-slab-one';
+  src: url("./vendor/fonts/AlfaSlabOne-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'galada';
+  src: url("./vendor/fonts/Galada-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'open-sans';
+  src: url("./vendor/fonts/OpenSans-Regular.ttf") format("truetype"), url("./vendor/fonts/OpenSans-Bold.ttf") format("truetype"); }
+
+.txt--xl {
+  font-size: em(64); }
+
+.txt--lg {
+  font-size: em(36); }
+
+.txt--md {
+  font-size: em(24); }
+
+.txt--sm {
+  font-size: em(18); }
+
+.txt--xs {
+  font-size: em(14); }
+
+.primary-text-color {
+  color: #fff; }
+
+.txt-primary-color {
+  color: #212121; }
+
+.secondary-text-color {
+  color: #1976d2; }
+
+.txt-accent-color {
+  color: #ffc107; }
+
+html {
+  font-family: 'open-sans'; }
