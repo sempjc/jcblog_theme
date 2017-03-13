@@ -22,6 +22,27 @@
 .bg-gray {
   background-color: #757575; }
 
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%; }
+
+.img-rounded--sm {
+  border-radius: 5px; }
+
+.img-rounded {
+  border-radius: 25px; }
+
+.img-rounded--lg {
+  border-radius: 45px; }
+
+.img-circle {
+  border-radius: 100%; }
+
+.img-thumbnail {
+  border: 1px solid #bdbdbd;
+  padding: 5px; }
+
 @font-face {
   font-family: 'alfa-slab-one';
   src: url("./vendor/fonts/AlfaSlabOne-Regular.ttf") format("truetype"); }

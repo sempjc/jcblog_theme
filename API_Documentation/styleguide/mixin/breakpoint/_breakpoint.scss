@@ -1,0 +1,20 @@
+
+// Mixin to manage responsive breakpoints
+// @param {String} $breakpoint - Breakpoint name
+// @require $breakpoints
+
+@mixin breakpoint($bp1, $bp2: 0) {
+  @if $bp2 == 0 {
+
+    @media( min-width: $bp1 ) {
+      @content;
+    }
+
+  } @else {
+
+    @media( min-width: $bp1) and ( max-width: $bp2) {
+      @content;
+    }
+
+  }
+}
