@@ -1,3 +1,23 @@
+@media (min-width: 320px) {
+  .test-xs-bp {
+    background-color: #2196f3; } }
+
+@media (min-width: 768px) {
+  .test-sm-bp {
+    background-color: #1976d2; } }
+
+@media (min-width: 1440px) {
+  .test-md-bp {
+    background-color: #bbdefb; } }
+
+@media (min-width: 1920px) {
+  .test-lg-bp {
+    background-color: #ffc107; } }
+
+@media (min-width: 2780px) {
+  .test-xl-bp {
+    background-color: #757575; } }
+
 .bg-primary-color {
   background-color: #2196f3; }
 
