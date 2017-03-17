@@ -104,7 +104,7 @@ var config = {
 
     output_css: {
         src:    local.cssdir  +  '/stylesheet.css',
-        file:   basedir  +  'theme-info.md',
+        file:   basedir  +  'theme-info.css',
         output: 'style.css',
         dest:    basedir
     },
