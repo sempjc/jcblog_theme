@@ -1,20 +1,78 @@
-
-// Mixin to manage responsive breakpoints
-// @param {String} $breakpoint - Breakpoint name
-// @require $breakpoints
+// Breakpoint Mixin
+//
+// The breakpoint mixin allow you to setup the media query breakpoint.
+//
+// * Type: number with unit. First argument is for min-width.
+// * Type: number with unit. Second argument is for max-width.
+//
+// If you want to use the mixin for setup only min-width pass just one value.
+// If you want to set a max-width or a Range (min and max) pass two argument,
+// For max-width set the first value to 0 and the second to the target value.
+//
+// Example Definition:
+//
+// * @include breakpoint( 320px ) { div{ background:blue } }
+// * @include breakpoint( 400px, 500px ) { div{ background:red } }
+// * @include breakpoint( 0px, 1000px ) { div{ background: green } }
+//
+//
+// To see the example in action resize the window width.
+//
+// markup:
+// <style> div{ background: black }</style>
+// <div class='test-xs-bp' style='width: 100%; height: 100px'></div>
+// <div class='test-sm-bp' style='width: 100%; height: 100px'></div>
+// <div class='test-md-bp' style='width: 100%; height: 100px'></div>
+// <div class='test-lg-bp' style='width: 100%; height: 100px'></div>
+// <div class='test-xl-bp' style='width: 100%; height: 100px'></div>
+//
+// Styleguide 6.1.0
 
 @mixin breakpoint($bp1, $bp2: 0) {
   @if $bp2 == 0 {
 
-    @media( min-width: $bp1 ) {
+    @media(min-width: $bp1) {
       @content;
     }
 
   } @else {
 
-    @media( min-width: $bp1) and ( max-width: $bp2) {
+    @media(min-width: $bp1) and (max-width: $bp2) {
       @content;
     }
 
+  }
+}
+
+
+// Sample Breakpoint Class
+
+.test-xs-bp {
+  @include breakpoint($xs-bp) {
+    background-color: $primary-color;
+  }
+}
+
+.test-sm-bp {
+  @include breakpoint($sm-bp) {
+    background-color: $primary-color-dark;
+  }
+}
+
+.test-md-bp {
+  @include breakpoint($md-bp) {
+    background-color: $primary-color-light;
+  }
+}
+
+.test-lg-bp {
+  @include breakpoint($lg-bp) {
+    background-color: $accent-color;
+  }
+}
+
+.test-xl-bp {
+  @include breakpoint($xl-bp) {
+    background-color: $gray;
   }
 }
