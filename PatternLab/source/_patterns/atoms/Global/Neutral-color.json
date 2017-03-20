@@ -1,0 +1,26 @@
+{
+
+"color":  [
+    {
+        "name": "$gray-dark",
+        "code": "#212121"
+    },
+
+    {
+        "name": "$gray",
+        "code": "#757575"
+    },
+
+    {
+        "name": "$gray-light",
+        "code": "#bdbdbd"
+    },
+
+    {
+        "name": "$white",
+        "code": "#ffffff"
+    }
+]
+
+
+}

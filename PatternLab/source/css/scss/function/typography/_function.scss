@@ -1,0 +1,23 @@
+//----------------------------------------------------------------------------
+//
+//    #em
+//
+//----------------------------------------------------------------------------
+
+
+// Base font size
+
+$browser-fs: 16;
+
+@function em($pixel, $base: $browser-fs) {
+
+  @if( unitless($pixel)) { $pixel: $pixel * 1px; }
+
+  @if( unitless($base))  { $base: $base * 1px;    }
+
+  @return ($pixel / $base) * 1em;
+
+}
+
+
+

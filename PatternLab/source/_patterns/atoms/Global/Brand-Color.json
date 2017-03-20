@@ -1,0 +1,26 @@
+{
+
+"color":  [
+    {
+        "name": "$primary-color-dark",
+        "code": "#1976d2"
+    },
+
+    {
+        "name": "$primary-color",
+        "code": "#2196f3"
+    },
+
+    {
+        "name": "$primary-color-light",
+        "code": "#bbdefb"
+    },
+
+    {
+        "name": "$accent-color",
+        "code": "#ffc107"
+    }
+]
+
+
+}

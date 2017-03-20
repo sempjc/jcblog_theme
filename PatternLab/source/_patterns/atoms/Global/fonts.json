@@ -1,0 +1,23 @@
+{
+  "fonts": [
+      {
+        "fontfamily": "alfa-slab-one",
+        "fontweight": "normal"
+      },
+
+      {
+        "fontfamily": "galada",
+        "fontweight": "normal"
+      },
+
+      {
+        "fontfamily": "open-sans",
+        "fontweight": "normal"
+      },
+
+      {
+        "fontfamily": "open-sans",
+        "fontweight": "bold"
+      }
+  ]
+}
