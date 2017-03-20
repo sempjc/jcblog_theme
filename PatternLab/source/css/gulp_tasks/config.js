@@ -45,7 +45,11 @@ var config = {
     },
 
     concat_css: {
-           src: 'temp/*.css',
+        src: [
+            'theme-info.css',
+            '../vendor/css/*.css',
+            'temp/*.css',
+        ],
           dest: './',
     outputName: 'style.css'
     },
