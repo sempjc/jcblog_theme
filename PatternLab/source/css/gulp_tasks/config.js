@@ -21,28 +21,6 @@ var vendor = {
     fontdir: vendordir  +  '/fonts'
 }
 
-// Fonts
-var fonts = {
-    alfaSlabdir: vendor.fontdir + '/Alfa_Slab_One',
-    galadadir:   vendor.fontdir + '/Galada',
-    openSansdir: vendor.fontdir + '/Open_Sans',
-
-        alfaSlab:'AlfaSlabOne-Regular.ttf',
-          galada:'Galada-Regular.ttf',
-        openSans:'OpenSans-Regular.ttf',
-    OpenSansBold:'OpenSans-Bold.ttf'
-}
-
-// Proxy Server
-var proxy = {
-    name: 'localhost:3000/jcsr-blog/'
-};
-
-
-var gulpDependency  =
-
-
-
 
 var config = {
 
