@@ -3,7 +3,6 @@
 // Base directory  location
 var basedir   = './';
 var vendordir = './vendor';
-var styleguide = './API_Documentation/styleguide/';
 
 
 // Locations of the local directories resource files
@@ -26,16 +25,26 @@ var config = {
 
     dependency: {
           gulp: require( 'gulp'),
+          sass: require( 'gulp-sass' ),
         concat: require( 'gulp-concat' ),
-          sass: require( 'gulp-sass'   ),
         rename: require( 'gulp-rename' ),
-    scssLinter: require( 'gulp-sass-lint' ),
+      iconFont: require( 'gulp-iconfont' ),
+   iconFontCss: require( 'gulp-iconfont-css'  ),
         inject: require( 'gulp-inject-string' ),
+    scssLinter: require( 'gulp-sass-lint'     ),
             fs: require( 'fs' )
     },
 
+    iconFonts: {
+        fontName: 'jc-icons',
+             src: '../fonts/iconFonts/*.svg',
+      targetPath: '../css/scss/base/_iconFonts.scss',
+        fontPath: '../fonts/',
+            dest: '../fonts/'
+    },
+
     scssLinter: {
-           src: './scss/**/**/*.scss'
+           src: './scss/**/*.scss'
     },
 
     sass: {
@@ -47,7 +56,6 @@ var config = {
     concat_css: {
         src: [
             'theme-info.css',
-            '../vendor/css/*.css',
             'temp/*.css',
         ],
           dest: './',
@@ -64,24 +72,23 @@ var config = {
 
 
     concat_js: {
-        src: [
+          src: [
             vendor.jsdir +  '/**/*.js',
             local.jsdir  +  '/*.js'
-        ],
-        outputName: 'app.js',
-        dest: basedir
+          ],
+   outputName: 'app.js',
+         dest: basedir
     },
 
 
     watch: {
-        scssdir:   [
-            './scss/**/**/*.scss',
+       scssdir:   [
+            './scss/**/*.scss',
             './*.css'
         ],
 
-        jsdir: '/*.js',
+         jsdir: '/*.js',
     }
-
 }
 
 
