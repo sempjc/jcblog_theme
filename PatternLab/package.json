@@ -1,7 +1,7 @@
 {
-  "name": "edition-node-gulp",
-  "description": "The gulp wrapper around patternlab-node core, providing tasks to interact with the core library and move supporting frontend assets.",
-  "version": "1.4.0",
+  "name": "jc-blog-site",
+  "description": "Personal Blog Site",
+  "version": "0.0.1",
   "dependencies": {
     "browser-sync": "^2.0.0",
     "chalk": "^1.1.3",
@@ -11,6 +11,22 @@
     "styleguidekit-assets-default": "^3.0.0",
     "styleguidekit-mustache-default": "^3.0.0"
   },
+
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-inject-string": "^1.1.0",
+    "gulp-jsdoc3": "^1.0.1",
+    "gulp-kss": "0.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-lint": "^1.3.2",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^2.0.1",
+    "require-dir": "^0.3.1"
+  },
+
   "keywords": [
     "Pattern Lab",
     "Atomic Web Design",
@@ -20,16 +36,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/pattern-lab/edition-node-gulp.git"
+    "url": "https://github.com/sempjc/jcblog_theme.git"
   },
-  "bugs": "https://github.com/pattern-lab/edition-node-gulp/issues",
-  "author": "Brian Muenzenmeyer",
+  "author": "jean carlo semprit rodriguez",
+
   "scripts": {
     "start": "gulp patternlab:serve",
     "postinstall": "node scripts/postinstall.js",
     "gulp": "gulp -- "
   },
-  "license": "MIT",
   "engines": {
     "node": ">=5.0"
   }
