@@ -1,0 +1,39 @@
+
+{
+
+"color":  [
+    {
+        "name": "jc-bg-primary-color--dark"
+    },
+
+    {
+        "name": "jc-bg-primary-color"
+    },
+
+    {
+        "name": "jc-bg-primary-color--light"
+    },
+
+    {
+        "name": "jc-bg-accent-color"
+    },
+
+    {
+        "name": "jc-bg-gray--dark"
+    },
+
+    {
+        "name": "jc-bg-gray"
+    },
+
+    {
+        "name": "jc-bg-gray--light"
+    },
+
+    {
+        "name": "jc-bg-white"
+    }
+]
+
+
+}

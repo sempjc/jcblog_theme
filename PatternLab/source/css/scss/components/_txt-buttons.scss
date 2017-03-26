@@ -1,0 +1,23 @@
+
+.jc-btn-txt {
+
+  background: white;
+
+  font-family: open-sans;
+  font-size: $fs-md;
+
+  padding: 10px 38px;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  display: inline-block;
+
+}
+
+@include button-txt('.jc-btn-txt', $gray);
+
+@include button-txt('.jc-btn-txt--primary', $primary-color);
+
+@include button-txt('.jc-btn-txt--secondary', $accent-color);

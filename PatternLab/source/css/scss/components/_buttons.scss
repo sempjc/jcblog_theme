@@ -1,0 +1,48 @@
+// TABLE OF CONTENT
+//
+// jc-btn .......................Definition of basic button
+// jc-btn--primary ..............Definition of primary button skin
+// jc-btn--secondary.............Definition of secondary button skin
+
+
+
+
+
+//
+// @jc-btn
+//
+// This is a base button. A base button provide basic style for a button.
+// You can customize the appearance by using the modifier class
+
+.jc-btn {
+  border: 0;
+
+  color: $white;
+
+  font-family: open-sans;
+  font-size: $fs-md;
+
+  outline: none;
+  padding: 10px 38px;
+}
+
+
+
+
+// Use of mixin
+//
+// Here we use the button 's mixin to setup the different appearance.
+//
+// Use button mixin to set up the basic button
+// 1. Set the basic button style
+// 2. Primary skin button base on the theme color
+// 3. Secondary skin button base on the theme color
+
+// @jc-btn
+@include button('.jc-btn', $gray);
+
+// @jc-btn--primary
+@include button('.jc-btn--primary', $primary-color);
+
+// @jc-btn--secondary
+@include button('.jc-btn--secondary', $accent-color);

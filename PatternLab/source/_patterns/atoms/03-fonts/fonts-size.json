@@ -1,0 +1,29 @@
+
+{
+  "fontsize": [
+      {
+        "classname": "jc-txt--xl",
+        "size": "64px"
+      },
+
+      {
+        "classname": "jc-txt--lg",
+        "size": "32px"
+      },
+
+      {
+        "classname": "jc-txt--md",
+        "size": "24px"
+      },
+
+      {
+        "classname": "jc-txt--sm",
+        "size": "18px"
+      },
+
+      {
+        "classname": "jc-txt--xs",
+        "size": "14px"
+      }
+  ]
+}

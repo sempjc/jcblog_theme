@@ -1,0 +1,22 @@
+
+{
+  "color": [
+      {
+        "classname": "jc-primary-text-color",
+        "bg-color":   "jc-bg-primary-color"
+      },
+
+      {
+        "classname": "jc-txt-primary-color"
+      },
+
+      {
+        "classname": "jc-secondary-text-color"
+      },
+
+      {
+        "classname": "jc-txt-accent-color"
+      }
+
+  ]
+}

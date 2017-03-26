@@ -1,6 +1,8 @@
 @import 'function/typography/function';
 @import 'function/responsive/responsive';
 
+@import 'mixin/button/button';
+
 @import 'atoms/var/breakpoint';
 @import 'atoms/var/color';
 @import 'atoms/var/typography';
@@ -9,6 +11,7 @@
 
 
 @import 'atoms/buttons/buttons';
+@import 'atoms/buttons/txt-buttons';
 
 
 @import 'atoms/color/color';
@@ -19,7 +22,7 @@
 
 @import 'atoms/images/images';
 
-
+@import 'atoms/form/form';
 @import 'atoms/inputs/inputs';
 @import 'atoms/inputs/input-controls';
 

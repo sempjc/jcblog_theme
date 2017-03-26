@@ -1,0 +1,59 @@
+// @button mixin
+//
+// Button mixin add style to the different state of the button.
+
+@mixin button($button, $bg-color) {
+
+  // Set the basic state of the button
+  #{$button} {
+    background-color: $bg-color;
+    box-shadow: 0 4px 4px $gray-light;
+
+    // Set the state of the button when user hover over the button
+    // but not pressed the button.
+    &:hover {
+      box-shadow: 0 4px 12px $gray;
+    }
+
+    // Set the state of the button when the user pressed the button
+    // for call an action
+    &:active {
+      background-color: darken($bg-color, 15);
+      box-shadow: 0 3px 4px $gray;
+      transition: .1s;
+    }
+  }
+}
+
+
+
+
+
+// @text button mixin
+//
+// Text Button mixin add style to the different state of the text button.
+
+@mixin button-txt($button, $bg-color) {
+
+  // Set the basic state of the text button
+  #{$button} {
+    border: solid 2px $bg-color;
+    box-shadow: 0 4px 4px $gray-light;
+    color: $bg-color;
+
+    // Set the state of the button when user hover over the button
+    // but not pressed the text button.
+    &:hover {
+      box-shadow: 0 4px 12px $gray;
+    }
+
+    // Set the state of the button when the user pressed the text button
+    // for call an action
+    &:active {
+      border: solid 1px darken($bg-color, 15);
+      box-shadow: 0 3px 4px $gray;
+      color: darken($bg-color, 15);
+      transition: .1s;
+    }
+  }
+}
